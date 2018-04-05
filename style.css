@@ -1,0 +1,338 @@
+/******* Google Font (Lato) ********/
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
+/******* Global CSS ********/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6f9f9;
+    font-family: 'Lato',sans-serif;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 65px 0;
+}
+
+p {
+    font-size: 80%;
+    text-align: center;
+    font-weight: 300;
+    line-height: 25px;
+    color: #333;
+}
+
+h2 {
+    font-size: 200%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: #333;
+}
+
+.clearfix {zoom:1}
+.clearfix {
+    content: '.';
+    clear: both;
+    display: table;
+}
+
+
+/******* Header ********/
+
+.logo {
+    height: 100px;
+    padding: 32px 0;
+}
+
+/******* Header ********/
+
+.banner {
+    background-image: url(../img/main-bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 600%;
+    text-transform: uppercase;
+    padding-top: 90px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-bottom: 35px;
+}
+
+h1:after {
+    display: block;
+    height: 2px;
+    background-color: #15a4fa;
+    content: " ";
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.banner p {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 65px;
+}
+
+
+/***** Normal State of CTA btn and Submit btn *******/
+.btn,
+input[type=submit]{
+    font-size: 90%;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #15a4fa;
+    border-radius: 5px;
+    transition: ease 0.3s;
+   
+}
+
+.btn {
+    padding: 20px 30px;
+    display: block;
+    margin: 0 auto ;  
+}
+
+/***** Hover State of CTA btn and Submit btn *******/
+.btn:hover,
+input[type=submit]:hover{
+    background-color: #15a4fa;
+    cursor: pointer;
+}
+
+.fa-chevron-down {
+    color: #fff;
+    padding: 5px;
+    margin-top: 110px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    transition: ease 0.3s;
+}
+
+.fa-chevron-down:hover {
+    color: #15a4fa;
+}
+
+
+/******* About Us ********/
+
+.about-us p {
+    font-size: 90%;
+}
+
+/******* Features Section ********/
+
+.features {
+    background-color: #fff;
+}
+
+.feature-box {
+    width: 30%;
+    float: left;
+    padding: 1%;
+    margin: 2.5%;
+    box-shadow: 0 1px 1px #ccc;
+    height: 260px;
+}
+
+
+/***** Left Margin Zero of the boxes *****/
+.feature-box:first-child,
+.portfolio-img li:first-child {
+    margin-left: 0;
+}
+
+/***** Right Margin Zero of the boxes *****/
+.feature-box:last-child,
+.portfolio-img li:last-child {
+    margin-right: 0;
+}
+
+.feature-box img {
+    display: block;
+    margin: 0 auto 10px;
+}
+
+h3 {
+    font-size: 110%;
+    text-align: center;
+    padding: 20px;
+    color: #333;
+}
+
+.feature-box p {
+    font-size: 80%;
+    padding: 0 20px;
+    
+}
+
+/******* Portfolio Section ********/
+
+.portfolio p {
+    margin-bottom: 65px;
+}
+
+.portfolio-img li {
+    position: relative;
+    list-style: none;
+    display: block;
+    float: left;
+    width: 30%;
+    margin: 0 2.5%;
+    padding-bottom: 3%;
+}
+
+.hover {
+    opacity: 0;
+    position: absolute;
+    background-color:  rgba(21, 164, 250, 0.8); 
+    top: 0;
+    left: 0;
+    bottom: 0;
+    left: 0;
+    height: 88%;
+    width: 106%;
+    text-align: center;
+}
+
+.hover .fa {
+    background-color: #15a4fa;
+    border: 1px solid #fff;
+    margin-top: 30%;
+    cursor: pointer;
+}
+
+.hover:hover {
+    opacity: 1;
+}
+
+
+/******* Contact Us Section ********/
+
+.contact-us {
+    background-image: url(../img/contact-bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-us h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.contact-us p {
+    color: #999;
+    margin-bottom: 50px;
+}
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    width: 100%;
+    padding: 20px;
+    font-size: 80%;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 120px;
+}
+
+input[type=checkbox]{
+    float: left;
+    margin: 22px 15px 0 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.contact-form p {
+    float: left;
+    color: #fff;
+    margin-top: 18px;
+    font-size: 85%;
+    margin-bottom: 0;
+}
+
+input[type=submit]{
+    float: right;
+    padding: 15px 50px;
+}
+
+
+/******* Footer Section ********/
+
+.footer {
+    height: 90px;
+}
+
+.footer p {
+    float: left;
+    margin-top: 34px;
+}
+
+.fa {
+    background-color: #555;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding-top: 9px;
+    border-radius: 3px;
+    transition: ease 0.4s all;
+}
+
+.social-icons li {
+    list-style: none;
+    float: right;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+.fa-facebook:hover {
+    background-color: #3b5999;
+    cursor: pointer;
+}
+
+.fa-twitter:hover {
+    background-color: #55acee;
+    cursor: pointer;
+}
+
+.fa-google-plus:hover {
+    background-color: #dd4b39;
+    cursor: pointer;
+}
+
+.fa-linkedin:hover {
+    background-color: #0077B5;
+    cursor: pointer;
+}
+
+
